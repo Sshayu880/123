@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: center;
     background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    padding: 50px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -30,18 +30,28 @@ header {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 40px;
 }
 
+/* Фото */
+.image-box {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Текст */
 .text-box {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
-    text-align: right;
+    text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Кнопка */
 button {
     background: #ff4081;
     color: white;
@@ -57,8 +67,9 @@ button:hover {
     background: #ff79b0;
 }
 
+/* Подвал */
 footer {
-    padding: 20px;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
@@ -87,8 +98,18 @@ footer {
     100% { opacity: 1; transform: translateX(0); }
 }
 
-.image-box {
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+/* 📌 АДАПТИВ ДЛЯ ТЕЛЕФОНОВ */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box {
+        max-width: 80%;
+    }
+
+    .text-box {
+        max-width: 90%;
+    }
 }
