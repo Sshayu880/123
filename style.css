@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 @keyframes gradientBG {
@@ -26,25 +25,12 @@ header {
     text-align: center;
 }
 
-/* Контейнер */
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
     padding: 40px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* Фото */
-.image-box img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Текст */
 .text-box {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
@@ -55,7 +41,6 @@ header {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Кнопка */
 button {
     background: #ff4081;
     color: white;
